@@ -1,0 +1,378 @@
+/*
+Theme Name: Ofrendas 2013
+Author: Tom Borger
+Description: Theme for 2013 Young People's Ofrendas Project
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body{
+	background:#aa0f5a;
+	font-family:'ff-avance-web-pro',sans-serif;
+}
+a, a:active, a:hover, a:visited{
+	color:#aa0f5a;
+}
+.site-header{
+	height:500px;
+	width:100%;
+	background:#ed247e url('img/skyline2.png') no-repeat bottom left;
+	position:relative;
+}
+.site-titles-wrap{
+	position:relative;
+	padding-left:50px;
+	padding-top:40px;
+	box-sizing:border-box;
+	width:100%;
+}
+.site-title{
+	width:460px;
+}
+.site-subtitle h2{
+	color:#fff;
+	line-height:1.1em;
+	text-shadow:none;
+	margin:22px 0px 16px 6px;
+}
+.site-description p{
+	color:#fff;
+	font-size:16px;
+	font-weight:400;
+	line-height:1.2em;
+	margin-left:6px;
+	text-shadow:none;
+}
+.skeleton{
+	width:360px;
+	height:600px;
+	position:absolute;
+	right:10%;
+	top:-50px;
+	background:transparent url('img/skeleton_white.png') no-repeat center center;
+	background-size:contain;
+}
+.bird{
+	display:none;
+}
+.site-nav-wrap{
+	padding:5px 0px;
+	position:relative;
+	width:100%;
+}
+.site-nav{
+	padding:5px 0px;
+	margin:0px;
+	background-color:#ffffff;
+	border-style: solid;
+	border-width: 5px;
+	-moz-border-image: url('img/distress.png') 5 0 repeat;
+	-webkit-border-image: url('img/distress.png') 5 0 repeat;
+	-o-border-image: url('img/distress.png') 5 0 repeat;
+	border-image: url('img/distress.png') 5 0 repeat;
+	border-image-outset:4px;
+	-webkit-box-shadow:0px 3px 6px #222;
+	-moz-box-shadow:0px 3px 6px #222;
+	-o-box-shadow:0px 3px 6px #222;
+	box-shadow:0px 3px 6px #222;
+	overflow:auto;
+}
+ul.nav-menu{
+	margin:0px;
+	list-style:none;
+	padding:0px 55px;
+}
+ul.nav-menu li{
+	display:inline-block;
+	text-transform:uppercase;
+	margin:2px 30px 0px 0px;
+}
+ul.nav-menu > li > ul{
+	display:none;
+	position:absolute;
+	margin:0px 0px 0px -10px;
+	padding:0px 0px 0px 15px;
+	border-style: solid;
+	border-width: 5px;
+	-moz-border-image: url('img/distress.png') 5 repeat;
+	-webkit-border-image: url('img/distress.png') 5 repeat;
+	-o-border-image: url('img/distress.png') 5 repeat;
+	border-image: url('img/distress.png') 5 repeat;
+	border-image-outset:4px;
+	-webkit-box-shadow:3px 3px 6px #222;
+	-moz-box-shadow:3px 3px 6px #222;
+	-o-box-shadow:3px 3px 6px #222;
+	box-shadow:3px 3px 6px #222;
+	background-color:#fff;
+	z-index:100;
+}
+ul.nav-menu > li > ul > li{
+	display:block;
+	font-size:14px;
+	padding-top:5px;
+}
+ul.nav-menu > li:hover > ul{
+	display:block;
+}
+	
+.site-main{
+	padding:0px 60px 0px 50px;
+}
+.site-main a,
+.site-main a:active,
+.site-main a:hover,
+.site-main a:visited{
+	color:#fff;
+}
+h1,h2,h3,h4,h5,h6{
+	color:#fff;
+	text-shadow:2px 2px 1px #7b0b41;
+	font-family:'ff-avance-web-pro',sans-serif;
+	font-weight:normal;
+}
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6{
+	color:#aa0f5a;
+	text-shadow:none;
+	font-weight:700;
+	margin-bottom:0px;
+}
+.post a,
+.post a:active,
+.post a:hover,
+.post a:visited{
+	color:#aa0f5a;
+}
+.content{
+	padding-top:50px;
+	padding-right:30px;
+}
+.post-date{
+	margin-bottom:20px;
+	color:#aa0f5a;
+	font-style:italic;
+}
+.older_posts_link{
+	float:left;
+	margin-top:25px;
+}
+.newer_posts_link{
+	float:right;
+	margin-top:25px;
+}
+.post{
+	background-color:#fff;
+	border-style:solid;
+	border-width:5px;
+	-moz-border-image: url('img/distress.png') 5 repeat;
+	-webkit-border-image: url('img/distress.png') 5 repeat;
+	-o-border-image: url('img/distress.png') 5 repeat;
+	border-image: url('img/distress.png') 5 repeat;
+	border-image-outset:4px;
+	-webkit-box-shadow:0px 3px 6px #222;
+	-moz-box-shadow:0px 3px 6px #222;
+	-o-box-shadow:0px 3px 6px #222;
+	box-shadow:0px 3px 6px #222;
+	padding:25px;
+	margin-top:30px;
+	overflow:auto;
+}
+.post p:last-child{
+	margin-bottom:0px;
+}
+#sidebar{
+	padding-top:50px;
+	color:#ffffff;
+	text-shadow:-2px 2px 2px #7b0b41;
+}
+#sidebar .widget-area{
+	border-bottom:2px solid #e8e63c;
+	padding:30px 0px;
+}
+#sidebar .widget-area:first-child{
+	padding-top:0px;
+}
+#sidebar .widget-area:last-child{
+	border-bottom:0px;
+}
+#sidebar .textwidget{
+	font-size:18px;
+	color:#fff;
+}
+#sidebar .widget_recent_entries a{
+	font-size:18px;
+}
+#sidebar .post-date{
+	color:#ddd;
+	display:block;
+}
+#sidebar ul{
+	list-style:none;
+	padding:0px;
+}
+#sidebar ul > li{
+	line-height:1em;
+	margin:10px 0px;
+}
+#sidebar .translation h3{
+	margin-bottom:0px;
+}
+#sidebar .translation .textwidget{
+	width:100%;
+}
+#sidebar .translation .textwidget select{
+	font-size:24px;
+}
+#sidebar .translation .textwidget .goog-te-gadget{
+	margin:2px 0px 5px 0px;
+}
+#sidebar .translation .goog-logo-link img{
+	width:50px;
+	margin:0px 2px;
+	display:inline;
+}
+#sidebar .translation .goog-logo-link{
+	font-family:Helvetica,Arial,sans-serif;
+	font-style:italic;
+	font-size:14px;
+	color:#ddd;
+}
+#footer{
+	background-color:#fff;
+	border-style:solid;
+	border-width:5px;
+	-moz-border-image: url('img/distress.png') 5 0 0 0 repeat;
+	-webkit-border-image: url('img/distress.png') 5 0 0 0 repeat;
+	-o-border-image: url('img/distress.png') 5 0 0 0 repeat;
+	border-image: url('img/distress.png') 5 0 0 0 repeat;
+	border-image-outset:4px;
+	padding:25px 50px;
+	color:#555;
+	font-style:italic;
+	margin-top:50px;
+}
+#wf-logo{
+	margin-left:10px;
+}
+#footer p{
+	margin-bottom:0px;
+}
+#footer .valign-outer-wrap{
+	display:block;
+	margin:0px auto;
+}
+#footer .valign-inner-wrap{
+	display:table;
+	width:100%;
+}
+#footer .valign{
+	display:table-cell;
+	vertical-align:middle;
+	height:75px;
+	width:100%;
+}
+#footer .copyright{
+	text-align:left;
+}
+#footer .acknowledgment{
+	text-align:right;
+}
+.content ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+.video-archive .post > ul > li,
+.ofrenda-archive .post > ul > li{
+	margin-bottom:50px;
+	display:block;
+}
+.student-archive .post > ul > li,
+.ofrenda-archive .post > ul > li{
+	margin-bottom:30px;
+}
+.content .post > ul > li:last-child{
+	margin-bottom:0px;
+}
+.content .post > ul > li > ul > li{
+	display:inline-block;
+}
+.content .post > ul > li > ul > li.school{
+	margin:15px 30px 0px 0px;
+}
+li.video, li.ofrenda{
+	display:inline-block;
+	margin:5px 5px 0px 0px;
+}
+li.video img{
+	max-height:90px;
+}
+.video_label{
+	text-transform:uppercase;
+	margin-top:15px;
+}
+.school_description{
+	margin-bottom:30px;
+}
+.student_info h3,
+.student_info h4{
+	margin-bottom:0px;
+}
+.student-archive .student_image_large{
+	-webkit-box-shadow:0px 3px 6px #222;
+	-moz-box-shadow:0px 3px 6px #222;
+	-o-box-shadow:0px 3px 6px #222;
+	box-shadow:0px 3px 6px #222;
+}
+.student-archive .student_info{
+	display:inline-block;
+	vertical-align:bottom;
+	margin-left:20px;
+}
+.wp-caption .wp-caption-text{
+	margin-top:10px;
+	font-size:14px;
+}
+
+@media only screen and (max-width: 1023px) {
+	.site-header{
+		height:auto;
+		position:relative;
+	}
+	.site-titles-wrap{
+		padding:30px 30px 0px 30px;
+	}
+	.site-title{
+		width:100%;
+		max-width:500px;
+		display:block;
+		margin:0px auto;
+	}
+	.site-subtitle{
+		font-size:30px;
+		margin-top:30px;
+		text-align:center;
+	}
+	.site-description{
+		text-align:center;
+		margin-bottom:50px;
+		padding:0px 30px;
+	}
+	.skeleton{
+		display:none;
+	}
+	.bird{
+		width:120px;
+		height:90px;
+		display:block;
+		margin:20px auto;
+		background:transparent url('img/bird.png') no-repeat center center;
+		background-size:contain;
+	}
+}

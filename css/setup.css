@@ -1,0 +1,1281 @@
+/*
+ * 1.0 Reset (via Twenty Thirteen)
+ *
+ * Modified from Normalize.css to provide cross-browser consistency and a smart
+ * default styling of HTML elements.
+ *
+ * @see http://git.io/normalize
+ *********************************************************************************/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden] {
+	display: none;
+}
+
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+body {
+	color: #141412;
+	line-height: 1.5;
+	margin: 0;
+}
+
+a {
+	color: #ca3c08;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ac0404;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:active,
+a:hover {
+	color: #ea9629;
+	outline: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: Bitter, Georgia, serif;
+	line-height: 1.3;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 0 0 33px 0;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0 0 25px 0;
+}
+
+h3 {
+	font-size: 26px;
+	margin: 0 0 22px 0;
+}
+
+h4 {
+	font-size: 16px;
+	margin: 0 0 25px 0;
+}
+
+h5 {
+	font-size: 16px;
+	margin: 0 0 30px 0;
+}
+
+h6 {
+	font-size: 16px;
+	margin: 0 0 36px 0;
+}
+
+address {
+	font-style: italic;
+	margin: 0 0 24px;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+p {
+	margin: 0 0 24px;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, serif;
+	font-size: 14px;
+	-webkit-hyphens: none;
+	-moz-hyphens:    none;
+	-ms-hyphens:     none;
+	hyphens:         none;
+}
+
+pre {
+	background: #f5f5f5;
+	color: #666;
+	font-family: monospace;
+	font-size: 14px;
+	margin: 20px 0;
+	overflow: auto;
+	padding: 20px;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+blockquote,
+q {
+	-webkit-hyphens: none;
+	-moz-hyphens:    none;
+	-ms-hyphens:     none;
+	hyphens:         none;
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+blockquote {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 24px 40px;
+}
+
+blockquote blockquote {
+	margin-right: 0;
+}
+
+blockquote cite,
+blockquote small {
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+blockquote em,
+blockquote i {
+	font-style: normal;
+	font-weight: 300;
+}
+
+blockquote strong,
+blockquote b {
+	font-weight: 400;
+}
+
+small {
+	font-size: smaller;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+dl {
+	margin: 0 20px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 20px;
+}
+
+menu,
+ol,
+ul {
+	margin: 16px 0;
+	padding: 0 0 0 40px;
+}
+
+ul {
+	list-style-type: square;
+}
+
+nav ul,
+nav ol {
+	list-style: none;
+	list-style-image: none;
+}
+
+li > ul,
+li > ol {
+	margin: 0;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+	vertical-align: middle;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0;
+}
+
+form {
+	margin: 0;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+	white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+	margin: 0;
+	max-width: 100%;
+	vertical-align: baseline;
+}
+
+button,
+input {
+	line-height: normal;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+	cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	padding-right: 2px; /* Don't cut off the webkit search cancel button */
+	width: 270px;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+table {
+	border-bottom: 1px solid #ededed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 14px;
+	line-height: 2;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+caption {
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid #ededed;
+	padding: 6px 10px 6px 0;
+}
+
+del {
+	color: #333;
+}
+
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+hr {
+	background: url(images/dotted-line.png) repeat center top;
+	background-size: 4px 4px;
+	border: 0;
+	height: 1px;
+	margin: 0 0 24px;
+}
+
+
+/*
+ * Repeatable Patterns  (via Twenty Thirteen)
+ **************************************************/
+
+.genericon:before,
+.menu-toggle:after,
+.featured-post:before,
+.date a:before,
+.entry-meta .author a:before,
+.format-audio .entry-content:before,
+.comments-link a:before,
+.tags-links a:first-child:before,
+.categories-links a:first-child:before,
+.edit-link a:before,
+.attachment .entry-title:before,
+.attachment-meta:before,
+.attachment-meta a:before,
+.comment-awaiting-moderation:before,
+.comment-reply-link:before,
+.comment-reply-login:before,
+.comment-reply-title small a:before,
+.bypostauthor > .comment-body .fn:before,
+.error404 .page-title:before {
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font: normal 16px/1 Genericons;
+	vertical-align: text-bottom;
+}
+
+/* Clearing floats */
+.clear:after,
+.attachment .entry-header:after,
+.site-footer .widget-area:after,
+.entry-content:after,
+.page-content:after,
+.navigation:after,
+.nav-links:after,
+.gallery:after,
+.comment-form-author:after,
+.comment-form-email:after,
+.comment-form-url:after,
+.comment-body:after {
+	clear: both;
+}
+
+.clear:before,
+.clear:after,
+.attachment .entry-header:before,
+.attachment .entry-header:after,
+.site-footer .widget-area:before,
+.site-footer .widget-area:after,
+.entry-content:before,
+.entry-content:after,
+.page-content:before,
+.page-content:after,
+.navigation:before,
+.navigation:after,
+.nav-links:before,
+.nav-links:after,
+.gallery:before,
+.gallery:after,
+.comment-form-author:before,
+.comment-form-author:after,
+.comment-form-email:before,
+.comment-form-email:after,
+.comment-form-url:before,
+.comment-form-url:after,
+.comment-body:before,
+.comment-body:after {
+	content: "";
+	display: table;
+}
+
+/* Assistive text */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* Form fields, general styles first. */
+button,
+input,
+textarea {
+	border: 2px solid #d4d0ba;
+	font-family: inherit;
+	padding: 5px;
+}
+
+input,
+textarea {
+	color: #141412;
+}
+
+input:focus,
+textarea:focus {
+	border: 2px solid #c3c0ab;
+	outline: 0;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	background: #e05d22; /* Old browsers */
+	background: -webkit-linear-gradient(top, #e05d22 0%, #d94412 100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, #e05d22 0%, #d94412 100%); /* W3C */
+	border: none;
+	border-bottom: 3px solid #b93207;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	padding: 11px 24px 10px;
+	text-decoration: none;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+	background: #ed6a31; /* Old browsers */
+	background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, #ed6a31 0%, #e55627 100%); /* W3C */
+	outline: none;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+	background: #d94412; /* Old browsers */
+	background: -webkit-linear-gradient(top, #d94412 0%, #e05d22 100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, #d94412 0%, #e05d22 100%); /* W3C */
+	border: none;
+	border-top: 3px solid #b93207;
+	padding: 10px 24px 11px;
+}
+
+.post-password-required input[type="submit"] {
+	padding: 7px 24px 4px;
+	vertical-align: bottom;
+}
+
+.post-password-required input[type="submit"]:active {
+	padding: 5px 24px 6px;
+}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+::-webkit-input-placeholder {
+	color: #7d7b6d;
+}
+
+:-moz-placeholder {
+	color: #7d7b6d;
+}
+
+::-moz-placeholder {
+	color: #7d7b6d;
+}
+
+:-ms-input-placeholder {
+	color: #7d7b6d;
+}
+
+/*
+ * Responsive images (via Twenty Thirteen)
+ ***************************************************/
+ 
+.entry-content img,
+.entry-summary img,
+.comment-content img,
+.widget img,
+.wp-caption {
+	max-width: 100%;
+}
+
+/* Make sure images with WordPress-added height and width attributes are scaled correctly. */
+.entry-content img,
+.entry-summary img,
+.comment-content img[height],
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto;
+}
+
+img.size-full,
+img.size-large,
+img.wp-post-image {
+	height: auto;
+	max-width: 100%;
+}
+
+/* Make sure videos and embeds fit their containers. */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+/* Override the Twitter embed fixed width. */
+.entry-content .twitter-tweet-rendered {
+	max-width: 100% !important;
+}
+
+/* Images */
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignleft {
+	margin: 5px 20px 5px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 10px 5px 0;
+}
+
+img.alignright {
+	margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+	margin: 5px auto;
+}
+
+img.alignnone {
+	margin: 5px 0;
+}
+
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+	color: #220e10;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+img.wp-smiley,
+.rsswidget img {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wp-caption.alignleft + ul,
+.wp-caption.alignleft + ol  {
+	list-style-position: inside;
+}
+
+/*
+ * GRID STYLES (UNTIMELY RIPPED FROM FOUNDATION 4) 
+ ****************************************************/
+ 
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  *zoom: 1; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row.collapse .column,
+  .row.collapse .columns {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    float: left; }
+  .row .row {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1; }
+    .row .row:before, .row .row:after {
+      content: " ";
+      display: table; }
+    .row .row:after {
+      clear: both; }
+    .row .row.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none;
+      *zoom: 1; }
+      .row .row.collapse:before, .row .row.collapse:after {
+        content: " ";
+        display: table; }
+      .row .row.collapse:after {
+        clear: both; }
+
+.column,
+.columns {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 100%;
+  float: left;
+}
+
+@media only screen {
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left; }
+
+  .small-1 {
+    position: relative;
+    width: 6.25%; }
+
+  .small-2 {
+    position: relative;
+    width: 12.5%; }
+
+  .small-3 {
+    position: relative;
+    width: 18.75%; }
+
+  .small-4 {
+    position: relative;
+    width: 25%; }
+
+  .small-5 {
+    position: relative;
+    width: 31.25%; }
+
+  .small-6 {
+    position: relative;
+    width: 37.5%; }
+
+  .small-7 {
+    position: relative;
+    width: 43.75%; }
+
+  .small-8 {
+    position: relative;
+    width: 50%; }
+
+  .small-9 {
+    position: relative;
+    width: 56.25%; }
+
+  .small-10 {
+    position: relative;
+    width: 62.5%; }
+
+  .small-11 {
+    position: relative;
+    width: 68.75%; }
+
+  .small-12 {
+    position: relative;
+    width: 75%; }
+
+  .small-13 {
+    position: relative;
+    width: 81.25%; }
+
+  .small-14 {
+    position: relative;
+    width: 87.5%; }
+
+  .small-15 {
+    position: relative;
+    width: 93.75%; }
+
+  .small-16 {
+    position: relative;
+    width: 100%; }
+
+  .small-offset-1 {
+    position: relative;
+    margin-left: 6.25%; }
+
+  .small-offset-2 {
+    position: relative;
+    margin-left: 12.5%; }
+
+  .small-offset-3 {
+    position: relative;
+    margin-left: 18.75%; }
+
+  .small-offset-4 {
+    position: relative;
+    margin-left: 25%; }
+
+  .small-offset-5 {
+    position: relative;
+    margin-left: 31.25%; }
+
+  .small-offset-6 {
+    position: relative;
+    margin-left: 37.5%; }
+
+  .small-offset-7 {
+    position: relative;
+    margin-left: 43.75%; }
+
+  .small-offset-8 {
+    position: relative;
+    margin-left: 50%; }
+
+  .small-offset-9 {
+    position: relative;
+    margin-left: 56.25%; }
+
+  .small-offset-10 {
+    position: relative;
+    margin-left: 62.5%; }
+
+  .small-offset-11 {
+    position: relative;
+    margin-left: 68.75%; }
+
+  .small-offset-12 {
+    position: relative;
+    margin-left: 75%; }
+
+  .small-offset-13 {
+    position: relative;
+    margin-left: 81.25%; }
+
+  .small-offset-14 {
+    position: relative;
+    margin-left: 87.5%; }
+
+  [class*="column"] + [class*="column"]:last-child {
+    float: right; }
+
+  [class*="column"] + [class*="column"].end {
+    float: left; }
+
+  .column.small-centered,
+  .columns.small-centered {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; } }
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+  .large-1 {
+    position: relative;
+    width: 6.25%; }
+
+  .large-2 {
+    position: relative;
+    width: 12.5%; }
+
+  .large-3 {
+    position: relative;
+    width: 18.75%; }
+
+  .large-4 {
+    position: relative;
+    width: 25%; }
+
+  .large-5 {
+    position: relative;
+    width: 31.25%; }
+
+  .large-6 {
+    position: relative;
+    width: 37.5%; }
+
+  .large-7 {
+    position: relative;
+    width: 43.75%; }
+
+  .large-8 {
+    position: relative;
+    width: 50%; }
+
+  .large-9 {
+    position: relative;
+    width: 56.25%; }
+
+  .large-10 {
+    position: relative;
+    width: 62.5%; }
+
+  .large-11 {
+    position: relative;
+    width: 68.75%; }
+
+  .large-12 {
+    position: relative;
+    width: 75%; }
+
+  .large-13 {
+    position: relative;
+    width: 81.25%; }
+
+  .large-14 {
+    position: relative;
+    width: 87.5%; }
+
+  .large-15 {
+    position: relative;
+    width: 93.75%; }
+
+  .large-16 {
+    position: relative;
+    width: 100%; }
+
+  .row .large-offset-1 {
+    position: relative;
+    margin-left: 6.25%; }
+
+  .row .large-offset-2 {
+    position: relative;
+    margin-left: 12.5%; }
+
+  .row .large-offset-3 {
+    position: relative;
+    margin-left: 18.75%; }
+
+  .row .large-offset-4 {
+    position: relative;
+    margin-left: 25%; }
+
+  .row .large-offset-5 {
+    position: relative;
+    margin-left: 31.25%; }
+
+  .row .large-offset-6 {
+    position: relative;
+    margin-left: 37.5%; }
+
+  .row .large-offset-7 {
+    position: relative;
+    margin-left: 43.75%; }
+
+  .row .large-offset-8 {
+    position: relative;
+    margin-left: 50%; }
+
+  .row .large-offset-9 {
+    position: relative;
+    margin-left: 56.25%; }
+
+  .row .large-offset-10 {
+    position: relative;
+    margin-left: 62.5%; }
+
+  .row .large-offset-11 {
+    position: relative;
+    margin-left: 68.75%; }
+
+  .row .large-offset-12 {
+    position: relative;
+    margin-left: 75%; }
+
+  .row .large-offset-13 {
+    position: relative;
+    margin-left: 81.25%; }
+
+  .row .large-offset-14 {
+    position: relative;
+    margin-left: 87.5%; }
+
+  .row .large-offset-15 {
+    position: relative;
+    margin-left: 93.75%; }
+
+  .push-1 {
+    position: relative;
+    left: 6.25%;
+    right: auto; }
+
+  .pull-1 {
+    position: relative;
+    right: 6.25%;
+    left: auto; }
+
+  .push-2 {
+    position: relative;
+    left: 12.5%;
+    right: auto; }
+
+  .pull-2 {
+    position: relative;
+    right: 12.5%;
+    left: auto; }
+
+  .push-3 {
+    position: relative;
+    left: 18.75%;
+    right: auto; }
+
+  .pull-3 {
+    position: relative;
+    right: 18.75%;
+    left: auto; }
+
+  .push-4 {
+    position: relative;
+    left: 25%;
+    right: auto; }
+
+  .pull-4 {
+    position: relative;
+    right: 25%;
+    left: auto; }
+
+  .push-5 {
+    position: relative;
+    left: 31.25%;
+    right: auto; }
+
+  .pull-5 {
+    position: relative;
+    right: 31.25%;
+    left: auto; }
+
+  .push-6 {
+    position: relative;
+    left: 37.5%;
+    right: auto; }
+
+  .pull-6 {
+    position: relative;
+    right: 37.5%;
+    left: auto; }
+
+  .push-7 {
+    position: relative;
+    left: 43.75%;
+    right: auto; }
+
+  .pull-7 {
+    position: relative;
+    right: 43.75%;
+    left: auto; }
+
+  .push-8 {
+    position: relative;
+    left: 50%;
+    right: auto; }
+
+  .pull-8 {
+    position: relative;
+    right: 50%;
+    left: auto; }
+
+  .push-9 {
+    position: relative;
+    left: 56.25%;
+    right: auto; }
+
+  .pull-9 {
+    position: relative;
+    right: 56.25%;
+    left: auto; }
+
+  .push-10 {
+    position: relative;
+    left: 62.5%;
+    right: auto; }
+
+  .pull-10 {
+    position: relative;
+    right: 62.5%;
+    left: auto; }
+
+  .push-11 {
+    position: relative;
+    left: 68.75%;
+    right: auto; }
+
+  .pull-11 {
+    position: relative;
+    right: 68.75%;
+    left: auto; }
+
+  .push-12 {
+    position: relative;
+    left: 75%;
+    right: auto; }
+
+  .pull-12 {
+    position: relative;
+    right: 75%;
+    left: auto; }
+
+  .push-13 {
+    position: relative;
+    left: 81.25%;
+    right: auto; }
+
+  .pull-13 {
+    position: relative;
+    right: 81.25%;
+    left: auto; }
+
+  .push-14 {
+    position: relative;
+    left: 87.5%;
+    right: auto; }
+
+  .pull-14 {
+    position: relative;
+    right: 87.5%;
+    left: auto; }
+
+  .push-15 {
+    position: relative;
+    left: 93.75%;
+    right: auto; }
+
+  .pull-15 {
+    position: relative;
+    right: 93.75%;
+    left: auto; }
+
+  .small-push-1 {
+    left: inherit; }
+
+  .small-pull-1 {
+    right: inherit; }
+
+  .small-push-2 {
+    left: inherit; }
+
+  .small-pull-2 {
+    right: inherit; }
+
+  .small-push-3 {
+    left: inherit; }
+
+  .small-pull-3 {
+    right: inherit; }
+
+  .small-push-4 {
+    left: inherit; }
+
+  .small-pull-4 {
+    right: inherit; }
+
+  .small-push-5 {
+    left: inherit; }
+
+  .small-pull-5 {
+    right: inherit; }
+
+  .small-push-6 {
+    left: inherit; }
+
+  .small-pull-6 {
+    right: inherit; }
+
+  .small-push-7 {
+    left: inherit; }
+
+  .small-pull-7 {
+    right: inherit; }
+
+  .small-push-8 {
+    left: inherit; }
+
+  .small-pull-8 {
+    right: inherit; }
+
+  .small-push-9 {
+    left: inherit; }
+
+  .small-pull-9 {
+    right: inherit; }
+
+  .small-push-10 {
+    left: inherit; }
+
+  .small-pull-10 {
+    right: inherit; }
+
+  .small-push-11 {
+    left: inherit; }
+
+  .small-pull-11 {
+    right: inherit; }
+
+  .small-push-12 {
+    left: inherit; }
+
+  .small-pull-12 {
+    right: inherit; }
+
+  .small-push-13 {
+    left: inherit; }
+
+  .small-pull-13 {
+    right: inherit; }
+
+  .small-push-14 {
+    left: inherit; }
+
+  .small-pull-14 {
+    right: inherit; }
+
+  .small-push-15 {
+    left: inherit; }
+
+  .small-pull-15 {
+    right: inherit; }
+
+  .column.large-centered,
+  .columns.large-centered {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; }
+
+  .column.large-uncentered,
+  .columns.large-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: none; } 
+}
