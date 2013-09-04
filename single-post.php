@@ -18,6 +18,7 @@
             }
          }
          ?>
+			<?php comments_template(); ?>
       </div>
       <div class="large-5 columns">
       	<div id="sidebar" class="sidebar-container" role="complementary">
@@ -26,13 +27,5 @@
 			</div>
       </div>
    </div><!-- .row -->
-   <div class="row">
-   	<div class="large-11 columns comments">
-			<?php comments_template(); ?>
-      </div>
-      <div class="large-5 columns">
-      </div>
-   </div>
 </div>
-
 <?php get_footer(); ?>
