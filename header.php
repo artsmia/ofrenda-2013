@@ -23,6 +23,10 @@
 
 <body <?php body_class(); ?>>
 
+<div id="MIA_header">
+	<a href="http://new.artsmia.org"><img width="373" height="15" src="<?php echo get_stylesheet_directory_uri(); ?>/img/trans.gif" alt=""></a>
+</div>
+   
 <header class="site-header" role="banner">
 	<div class="site-titles-wrap">
       <a href="<?php echo home_url(); ?>"><img class="site-title" alt="Dia de los Muertos" src="<?php echo get_stylesheet_directory_uri().'/img/title.png'; ?>" /></a>

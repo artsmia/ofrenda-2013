@@ -11,7 +11,30 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 body{
 	background:#aa0f5a;
 	font-family:'ff-avance-web-pro',sans-serif;
+	margin-top:46px;
 }
+#MIA_header{
+	background: #000 url('img/MIA_web_header.jpg') top left no-repeat;
+	position: fixed;
+	top:0;
+	left:0;
+	height:46px;
+	width:100%;
+	margin:0;
+	z-index:100;
+}
+#MIA_header a {
+	margin:0;
+	padding:0;
+	height:46px;
+}
+#MIA_header a img {
+	margin:0;
+	padding:0;
+	height:46px;
+	width:46px;
+}
+
 a, a:active, a:hover, a:visited{
 	color:#aa0f5a;
 }
