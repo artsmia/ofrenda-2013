@@ -26,6 +26,13 @@
 			</div>
       </div>
    </div><!-- .row -->
+   <div class="row">
+   	<div class="large-11 columns comments">
+			comments_template();
+      </div>
+      <div class="large-5 columns">
+      </div>
+   </div>
 </div>
 
 <?php get_footer(); ?>
