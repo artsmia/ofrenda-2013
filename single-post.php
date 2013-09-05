@@ -18,7 +18,9 @@
             }
          }
          ?>
-			<?php comments_template(); ?>
+         <div class="light-text">
+				<?php comments_template(); ?>
+         </div>
       </div>
       <div class="large-5 columns">
       	<div id="sidebar" class="sidebar-container" role="complementary">
