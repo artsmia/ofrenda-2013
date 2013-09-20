@@ -138,7 +138,7 @@ function generate_video_cpt() {
 		'label'               => 'video',
 		'description'         => 'A single video page.',
 		'labels'              => $labels,
-		'supports'            => array( 'comments' ),
+		'supports'            => array( 'comments', 'editor' ),
 		'taxonomies'          => array( 'student', 'phase' ),
 		'hierarchical'        => false,
 		'public'              => true,
