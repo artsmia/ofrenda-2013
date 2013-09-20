@@ -205,7 +205,7 @@ h1,h2,h3,h4,h5,h6{
 	-moz-box-shadow:0px 3px 6px #222;
 	-o-box-shadow:0px 3px 6px #222;
 	box-shadow:0px 3px 6px #222;
-	padding:25px;
+	padding:35px;
 	margin-top:30px;
 	overflow:auto;
 }
@@ -370,7 +370,7 @@ li.video img{
 	color:#fff;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 900px) {
 	.site-header{
 		height:auto;
 		position:relative;
@@ -404,5 +404,65 @@ li.video img{
 		margin:20px auto;
 		background:transparent url('img/bird.png') no-repeat center center;
 		background-size:contain;
+	}
+	ul.nav-menu{
+		text-align:center;
+	}
+	p{
+		font-size:18px;
+	}
+	.site-main{
+		padding:0px 25px;
+	}
+	.content{
+		padding-right:0.9375em;
+	}
+	.post{
+		padding:50px;
+	}
+	ul.nav-menu li{
+		display:block;
+		margin:5px 0px;
+	}
+	ul.nav-menu > li > ul{
+		display:block;
+		position:static;
+		border-style:none;
+		border-width:0px;
+		border-image:none;
+		-webkit-border-image:none;
+		-moz-border-image:none;
+		-o-border-image:none;
+		box-shadow:none;
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		-o-box-shadow:none;
+		margin:0px;
+		padding:0px;
+	}
+	ul.nav-menu > li > ul > li{
+		font-size:14px;
+		margin:5px 0px;
+		padding:0px;
+		text-transform:none;
+	}
+	ul.nav-menu li.current-menu-item{
+		font-weight:bold;
+	}
+	ul.nav-menu li.current-menu-item > ul > li{
+		font-weight:normal;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.site-main{
+		padding:0px 10px;
+	}
+	.post{
+		padding:20px;
+	}
+	p{
+		font-size:16px;
 	}
 }
