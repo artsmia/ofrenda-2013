@@ -224,6 +224,15 @@ function generate_phase_tax()  {
 }
 
 /*
+ * CUSTOMIZE EXCERPT_MORE
+ ***************************/
+add_filter('excerpt_more', 'new_excerpt_more');
+function new_excerpt_more($more) {
+	global $post;
+	return '... <a href="' . get_permalink() . '">Read&nbsp;more&nbsp;&raquo;</a>';
+}
+
+/*
  * HELPERS
  ***************/
 function ksortRecursive($array){
