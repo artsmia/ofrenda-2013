@@ -13,6 +13,9 @@ body{
 	font-family:'ff-avance-web-pro',sans-serif;
 	margin-top:46px;
 }
+h4{
+	font-size:20px;
+}
 #MIA_header{
 	background: #000 url('img/MIA_web_header.jpg') top left no-repeat;
 	position: fixed;
@@ -174,6 +177,10 @@ h1,h2,h3,h4,h5,h6{
 .post a:hover,
 .post a:visited{
 	color:#aa0f5a;
+}
+.readmore{
+	display:inline-block;
+	float:right;
 }
 .content{
 	padding-top:50px;
@@ -347,11 +354,16 @@ li.video img{
 .student_info h4{
 	margin-bottom:0px;
 }
+.student-archive .post{
+	padding-top:50px;
+}
 .student-archive .student_image_large{
 	-webkit-box-shadow:0px 3px 6px #222;
 	-moz-box-shadow:0px 3px 6px #222;
 	-o-box-shadow:0px 3px 6px #222;
 	box-shadow:0px 3px 6px #222;
+	margin-bottom:-60px;
+	margin-left:15px;
 }
 .student-archive .student_info{
 	display:inline-block;
@@ -455,11 +467,22 @@ li.video img{
 
 }
 
+@media only screen and (max-width: 640px) {
+	.student-archive .post{
+		padding-top:40px;
+	}
+	.student-archive .student_image_large{
+		margin-bottom:0px;
+		margin-left:0px;
+	}
+}
+
 @media only screen and (max-width: 480px) {
 	.site-main{
 		padding:0px 10px;
 	}
-	.post{
+	.post,
+	.student-archive .post{
 		padding:20px;
 	}
 	p{

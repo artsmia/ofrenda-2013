@@ -42,7 +42,7 @@
 					echo "<h3 class='student_name_large'>".$term->name."</h3>";
 					echo "<a href='".site_url('/school/'.$school->slug)."'><h4 class='student_meta_large'>".$school->name."</h4></a>";
 				echo "</div>";
-				echo "<div class='post'>";				
+				echo "<div class='post'>";	
 				echo "<ul class='phases'>";
 				foreach($posts as $k=>$phase){
 					if('ofrenda'==$k){
@@ -54,7 +54,7 @@
 							echo "<li class='phase'><a href='".get_permalink($phase['post']->ID)."'><h4>Ofrenda</h4></a></li>";
 						}
 					} else {
-						echo "<li class='phase'><a href='".get_permalink($phase['post']->ID)."'><h4>".$phase['meta']->name."</h4></a></li>";
+						echo "<li class='phase'><a href='".get_permalink($phase['post']->ID)."'><h4>Video for ".$phase['meta']->name."</h4></a></li>";
 					}
 				}
 				echo "</ul>";
@@ -62,7 +62,7 @@
 				// School
 				echo "<h3 class='school_name_large'>".$term->name."</h3>";
 				echo "<div class='post'>";
-				echo "<div class='school_description'>".$term->description." <a href='".get_field('link', 'student_'.$term->term_id)."'>School homepage &raquo;</a></div>";
+				echo "<div class='school_description'>".$term->description." <a href='".get_field('link', 'student_'.$term->term_id)."'>School&nbsp;homepage&nbsp;&raquo;</a></div>";
 				echo "<h3>Students</h3>";
 				echo "<ul class='students'>";
 				foreach($posts as $student_id){

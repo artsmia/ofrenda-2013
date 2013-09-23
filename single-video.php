@@ -11,7 +11,6 @@
          ?>
          <div class="post">
             <h3 class="post-title"><?php the_title(); ?></h3>        
-            <?php the_date("l, F j", "<div class='post-date'>", "</div>"); ?>
             <?php the_content(); ?>
          </div>
          <?php
