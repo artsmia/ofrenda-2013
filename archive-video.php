@@ -34,11 +34,14 @@
 					echo "<li class='school'><a href='".home_url()."/school/".$school['meta']->slug."'><h5>".$school['meta']->name."</h5></a>";
 					echo "<ul class='videos'>";
 					foreach($school['students'] as $student){
-						$image = get_field('image', 'student_'.$student['meta']->term_id);
-						$image_url = $image['url'];
+						//$image = get_field('image', 'student_'.$student['meta']->term_id);
+						//$image_url = $image['url'];
+						$content = $student['post']->post_content;
+						preg_match("(v=(.{11}))", $content, $matches);
+						$youtube_thumb_src = 'http://img.youtube.com/vi/' . $matches[1] . '/0.jpg';
 						?>
 						<li class="video">
-		                  	<a href="<?php echo get_permalink($student['post']->ID); ?>"><img class="student_image" src="<?php echo $image_url; ?>" /></a>
+		                  	<a href="<?php echo get_permalink($student['post']->ID); ?>"><img class="video_thumb" src="<?php echo $youtube_thumb_src; ?>" /></a>
 			               	<a href="<?php echo get_permalink($student['post']->ID); ?>"><p class="student_name"><?php echo $student['meta']->name; ?></p></a>
                   		</li>
 						<?php

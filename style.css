@@ -341,7 +341,7 @@ li.video, li.ofrenda{
 	margin:5px 5px 0px 0px;
 }
 li.video img{
-	max-height:90px;
+	height:150px;
 }
 .video_label{
 	text-transform:uppercase;
