@@ -11,13 +11,20 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?> Young People's Ofrendas Project | The Minneapolis Institute of Arts</title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
-   <script type="text/javascript" src="//use.typekit.net/qqt0bwy.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qqt0bwy.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta name="description" content="<?php bloginfo('description'); ?>">
+	<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?> Young People's Ofrendas Project | The Minneapolis Institute of Arts">
+   	<meta property="og:description" content="<?php bloginfo('description'); ?>">
+    <meta property="og:image" content="<?php if(has_post_thumbnail()){ echo wp_get_attachment_url(get_post_thumbnail_id()); } else { echo get_stylesheet_directory_uri()."/img/ofrenda_fb.gif"; } ?>"> 
+	<meta name="twitter:site" content="@artsmia">
+	<meta name="twitter:card" content="summary">
+  
 	<?php wp_head(); ?>
 </head>
 
