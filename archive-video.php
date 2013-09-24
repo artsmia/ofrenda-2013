@@ -16,7 +16,7 @@
 					$posts[$phase->name]['meta'] = $phase;
 					$posts[$phase->name]['schools'][$school->name]['meta'] = $school;
 					$posts[$phase->name]['schools'][$school->name]['students'][$student->name]['meta'] = $student;
-					$posts[$phase->name]['schools'][$school->name]['students'][$student->name]['post'] = $video;
+					$posts[$phase->name]['schools'][$school->name]['students'][$student->name]['post'] = $post;
 				}
 			}
 			$posts = ksortRecursive($posts);
@@ -38,11 +38,11 @@
 						$image_url = $image['url'];
 						?>
 						<li class="video">
-                  	<a href="<?php echo get_permalink($student['post']->ID); ?>"><img class="student_image" src="<?php echo $image_url; ?>" /></a>
-	               	<a href="<?php echo get_permalink($student['post']->ID); ?>"><p class="student_name"><?php echo $student['meta']->name; ?></p></a>
-                  </li>
+		                  	<a href="<?php echo get_permalink($student['post']->ID); ?>"><img class="student_image" src="<?php echo $image_url; ?>" /></a>
+			               	<a href="<?php echo get_permalink($student['post']->ID); ?>"><p class="student_name"><?php echo $student['meta']->name; ?></p></a>
+                  		</li>
 						<?php
-               }
+               		}
 					echo "</ul></li>";
 				}
 				echo "</ul></li>";
