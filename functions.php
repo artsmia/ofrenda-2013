@@ -1,6 +1,11 @@
 <?php
 
 /*
+ *	ADD FEATURED IMAGE SUPPORT
+ *********************************/
+add_theme_support( 'post-thumbnails' );
+
+/*
  *	ENQUEUE SCRIPTS AND STYLES
  *********************************/
 add_action('wp_enqueue_scripts', 'ofrendas_scripts_styles');
