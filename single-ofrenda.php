@@ -1,3 +1,7 @@
+<?php 
+$image = get_field('image');
+$image_src = $image['url'];
+?>
 <?php get_header(); ?>
 
 <div id="main" class="site-main">
@@ -11,7 +15,7 @@
          ?>
          <div class="post">
             <h3 class="post-title"><?php the_title(); ?></h3>        
-            <?php the_date("l, F j", "<div class='post-date'>", "</div>"); ?>
+            <img class='ofrenda-image' src='<?php echo $image_src; ?>' />            
             <?php the_content(); ?>
          </div>
          <?php
