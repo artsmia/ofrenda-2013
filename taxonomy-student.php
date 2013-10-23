@@ -70,6 +70,9 @@
 					echo "<a href='" . get_permalink($posts['ofrenda']['post']->ID) . "'><p class='ofrenda_name'>" . get_the_title($posts['ofrenda']['post']->ID) . "</a>";
 					echo "</div>";
 				}
+				if(!array_key_exists('videos', $posts) && !array_key_exists('ofrenda', $posts)){
+					echo "<h3>No content yet. Check back soon!</h3>";
+				}
 			} else {
 				// School
 				echo "<h3 class='school_name_large'>".$term->name."</h3>";
