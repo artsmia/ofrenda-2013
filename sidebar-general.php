@@ -29,7 +29,7 @@ if(is_singular('ofrenda') || is_singular('video')){
   $posts = ksortRecursive($posts);
   wp_reset_postdata();
 
-  if($posts){
+  if(array_key_exists('videos', $posts) || array_key_exists('ofrenda', $posts)){
     echo "<div class='widget-area'>";
       echo "<h3>Also by " . $posts['student'] . ":</h3>";
       if(array_key_exists('videos', $posts)){
