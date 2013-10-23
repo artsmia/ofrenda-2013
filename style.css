@@ -336,12 +336,18 @@ h1,h2,h3,h4,h5,h6{
 .content .post > ul > li > ul > li.school{
 	margin:15px 30px 0px 0px;
 }
-li.video, li.ofrenda{
+li.video{
 	display:inline-block;
 	margin:5px 5px 0px 0px;
 }
-li.video img{
+li.video img, 
+li.ofrenda img{
 	height:150px;
+}
+li.ofrenda{
+	display:block;
+	margin:10px 0px;
+	font-size:0px;
 }
 .video_label{
 	text-transform:uppercase;
@@ -362,7 +368,7 @@ li.video img{
 	-moz-box-shadow:0px 3px 6px #222;
 	-o-box-shadow:0px 3px 6px #222;
 	box-shadow:0px 3px 6px #222;
-	margin-bottom:-60px;
+	margin-bottom:8px;
 	margin-left:15px;
 }
 .student-archive .student_info{
@@ -386,6 +392,10 @@ h3.post-title{
 }
 img.ofrenda-image{
 	max-width:100%;
+	margin-bottom:30px;
+}
+p.ofrenda_name{
+	font-size:medium;
 }
 
 @media only screen and (max-width: 900px) {
@@ -480,6 +490,9 @@ img.ofrenda-image{
 	.student-archive .student_image_large{
 		margin-bottom:0px;
 		margin-left:0px;
+	}
+	li.ofrenda .student_image{
+		display:none;
 	}
 }
 

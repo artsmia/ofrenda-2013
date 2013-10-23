@@ -27,13 +27,15 @@
 				echo "<li class='school'><a href='".home_url()."/school/".$school['meta']->slug."'><h3>".$school['meta']->name."</h3></a>";
 				echo "<ul class='students'>";
 				foreach($school['students'] as $student){
-					$image = get_field('image', 'student_'.$student['meta']->term_id);
-					$image_url = $image['url'];
+					$student_image = get_field('image', 'student_'.$student['meta']->term_id);
+					$student_image_url = $student_image['url'];
+          $ofrenda_image = get_field('image', $student['post']->ID);
+          $ofrenda_image_url = $ofrenda_image['sizes']['thumbnail'];
 					?>
-					<li class="video">
-               	<?php // Should be ofrenda image -- not student ?>
-						<a href="<?php echo get_permalink($student['post']->ID); ?>"><img class="student_image" src="<?php echo $image_url; ?>" /></a>
-						<a href="<?php echo get_permalink($student['post']->ID); ?>"><p class="student_name"><?php echo $student['meta']->name; ?></p></a>
+					<li class="ofrenda">
+            <a href="<?php echo get_permalink($student['post']->ID); ?>"><img class="ofrenda_thumb" src="<?php echo $ofrenda_image_url; ?>" /></a>
+						<a href="<?php echo get_permalink($student['post']->ID); ?>"><img class="student_image" src="<?php echo $student_image_url; ?>" /></a>
+						<a href="<?php echo get_permalink($student['post']->ID); ?>"><p class="ofrenda_name"><?php echo get_the_title($student['post']->ID); ?></p></a>
 					</li>
             	<?php
 				}
