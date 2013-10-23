@@ -400,8 +400,31 @@ p.ofrenda_name{
 .student_videos{
 	margin-bottom:30px;
 }
+.student_videos h4,
+.student_ofrenda h4{
+	margin:0px 0px 10px 0px;
+}
 .student-archive .post{
 	padding-top:30px;
+}
+.widget-area .student_videos{
+	margin-bottom:20px;
+}
+.widget-area ul.videos{
+	margin:0px;
+}
+#sidebar .widget-area ul li.video{
+	margin-top:0px;
+}
+.widget-area li.video img.video_thumb,
+.widget-area img.ofrenda_image{
+	height:auto;
+	max-width:100%;
+}
+.widget-area .phase_name,
+.widget-area .ofrenda_name{
+	margin-top:10px;
+	margin-bottom:10px;
 }
 
 @media only screen and (max-width: 900px) {
