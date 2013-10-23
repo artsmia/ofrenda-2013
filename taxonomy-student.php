@@ -24,8 +24,8 @@
 							$posts['ofrenda']['post'] = $post;
 						} else {
 							$phase = array_pop(get_the_terms($post->ID, 'phase'));
-							$posts[$phase->name]['meta'] = $phase;
-							$posts[$phase->name]['post'] = $post;
+							$posts['videos'][$phase->name]['meta'] = $phase;
+							$posts['videos'][$phase->name]['post'] = $post;
 						}
 					} else {
 						// School
@@ -43,21 +43,33 @@
 					echo "<a href='".site_url('/school/'.$school->slug)."'><h4 class='student_meta_large'>".$school->name."</h4></a>";
 				echo "</div>";
 				echo "<div class='post'>";	
-				echo "<ul class='phases'>";
-				foreach($posts as $k=>$phase){
-					if('ofrenda'==$k){
-						$ofrenda_image = get_field('image', $phase['post']->ID);
-						$ofrenda_image_url = $ofrenda_image['url'];
-						if($ofrenda_image){
-							echo "<li class='phase'><a href='".get_permalink($phase['post']->ID)."'><img class='ofrenda_image' src='".$ofrenda_image_url."' /><h4>Ofrenda</h4></a></li>";
-						} else {
-							echo "<li class='phase'><a href='".get_permalink($phase['post']->ID)."'><h4>Ofrenda</h4></a></li>";
-						}
-					} else {
-						echo "<li class='phase'><a href='".get_permalink($phase['post']->ID)."'><h4>Video for ".$phase['meta']->name."</h4></a></li>";
-					}
+				if(array_key_exists('videos', $posts)){
+					echo "<div class='student_videos'>";
+					echo "<h3>Videos</h3>";
+					echo "<ul class='videos'>";
+					foreach($posts['videos'] as $video){
+						$content = $video['post']->post_content;
+						preg_match("(v=(.{11}))", $content, $matches);
+						$youtube_thumb_src = 'http://img.youtube.com/vi/' . $matches[1] . '/0.jpg';
+						?>
+						<li class="video">
+		          <a href="<?php echo get_permalink($video['post']->ID); ?>"><img class="video_thumb" src="<?php echo $youtube_thumb_src; ?>" /></a>
+			        <a href="<?php echo get_permalink($video['post']->ID); ?>"><p class="phase_name"><?php echo $video['meta']->name; ?></p></a>
+            </li>
+						<?php
+          }
+					echo "</ul>";
+					echo "</div>";
 				}
-				echo "</ul>";
+				if(array_key_exists('ofrenda', $posts)){
+					$ofrenda_img = get_field('image', $posts['ofrenda']['post']->ID);
+					$ofrenda_img_src = $ofrenda_img['sizes']['thumbnail'];
+					echo "<div class='student_ofrenda'>";
+					echo "<h3>Ofrenda</h3>";
+					echo "<a href='" . get_permalink($posts['ofrenda']['post']->ID) . "'><img src='" . $ofrenda_img_src . "' class='ofrenda_image' /></a>";
+					echo "<a href='" . get_permalink($posts['ofrenda']['post']->ID) . "'><p class='ofrenda_name'>" . get_the_title($posts['ofrenda']['post']->ID) . "</a>";
+					echo "</div>";
+				}
 			} else {
 				// School
 				echo "<h3 class='school_name_large'>".$term->name."</h3>";

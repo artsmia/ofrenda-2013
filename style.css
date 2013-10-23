@@ -397,6 +397,12 @@ img.ofrenda-image{
 p.ofrenda_name{
 	font-size:medium;
 }
+.student_videos{
+	margin-bottom:30px;
+}
+.student-archive .post{
+	padding-top:30px;
+}
 
 @media only screen and (max-width: 900px) {
 	.site-header{
