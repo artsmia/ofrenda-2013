@@ -346,8 +346,9 @@ li.ofrenda img{
 }
 li.ofrenda{
 	display:block;
-	margin:10px 0px;
+	margin:10px 15px 10px 0px;
 	font-size:0px;
+	vertical-align:top;
 }
 .video_label{
 	text-transform:uppercase;
@@ -396,6 +397,9 @@ img.ofrenda-image{
 }
 p.ofrenda_name{
 	font-size:medium;
+	max-width:300px;
+	margin-top:3px;
+	line-height:1.2em;
 }
 .student_videos{
 	margin-bottom:30px;
