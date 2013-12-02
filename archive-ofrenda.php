@@ -17,7 +17,7 @@
 					$posts[$school->name]['students'][$student->name]['post'] = $post;
 				}
 			}
-			$ofrendas = ksortRecursive($ofrendas);
+			$posts = ksortRecursive($posts);
 			wp_reset_postdata();
 			?>
          <div class="post">

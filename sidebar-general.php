@@ -18,10 +18,12 @@ if(is_singular('ofrenda') || is_singular('video')){
       if('ofrenda' == $post_type && !$is_ofrenda){
         $posts['ofrenda']['post'] = $post;
       } else {
-        $phase = array_pop(get_the_terms($post->ID, 'phase'));
-        if($phase != $current_phase){
-          $posts['videos'][$phase->name]['meta'] = $phase;
-          $posts['videos'][$phase->name]['post'] = $post;
+        if(get_the_terms($post->ID, 'phase')){
+          $phase = array_pop(get_the_terms($post->ID, 'phase'));
+          if($phase != $current_phase){
+            $posts['videos'][$phase->name]['meta'] = $phase;
+            $posts['videos'][$phase->name]['post'] = $post;
+          }
         }
       }
     }
